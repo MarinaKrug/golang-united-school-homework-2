@@ -12,11 +12,11 @@ type sides int
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-const SidesTriangle = 3
-const SidesSquare = 4
-const SidesCircle = 0
+const SidesTriangle sides = 3
+const SidesSquare sides = 4
+const SidesCircle sides = 0
 
-func CalcSquare(sideLen float64, sidesNum float64) float64 {
+func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	switch sidesNum {
 	case SidesSquare:
 		return sideLen * sideLen
